@@ -1,0 +1,54 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "Crop",
+	"patterns": [
+		{
+			"include": "#keywords"
+		},
+		{
+			"include": "#strings"
+		}
+	],
+	"repository": {
+		"keywords": {
+			"patterns": [
+                {
+                    "name": "keyword.control.crop",
+                    "match": "\\b(if|while|for|return)\\b"
+			    },
+				{
+					"name": "keyword.function.crop",
+					"match": "\\bfn\\b"
+				},
+                {
+                    "name": "comment.line.double-slash",
+                    "match": "^\/\/ ?+[^ +TODO].+"
+                },
+                {
+                    "name": "keyword.types.crop",
+                    "match": "\\b(Int|Float|Boolean|String)\\b"
+                },
+				{
+					"name": "comment.line.double-slash.todo",
+					"match": "^\/\/( +)?TODO?.+"
+				},
+				{
+					"name": "keyword.asm.crop",
+					"match": "\basm"
+				}
+            ]
+		},
+		"strings": {
+			"name": "string.quoted.double.crop",
+			"begin": "\"",
+			"end": "\"",
+			"patterns": [
+				{
+					"name": "constant.character.escape.crop",
+					"match": "\\\\."
+				}
+			]
+		}
+	},
+	"scopeName": "source.crop"
+}
