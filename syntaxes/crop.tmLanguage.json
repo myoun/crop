@@ -31,10 +31,6 @@
 				{
 					"name": "comment.line.double-slash.todo",
 					"match": "^\/\/( +)?TODO?.+"
-				},
-				{
-					"name": "keyword.asm.crop",
-					"match": "\basm"
 				}
             ]
 		},
